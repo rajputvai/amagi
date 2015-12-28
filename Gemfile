@@ -48,3 +48,5 @@ end
 
 gem 'pg', '0.18.2'
 gem 'oj', '2.12.14'
+gem 'activerecord-import', '0.10.0'
+gem 'apipie-rails', '0.3.3'
