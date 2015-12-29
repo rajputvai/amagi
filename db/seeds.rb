@@ -19,3 +19,7 @@ CSV.foreach(csv_file) do |row|
 end
 Spot.delete_all()
 Spot.import(columns, values)
+Spot.update_all(
+  :video_path => "https://amagi.herokuapp.com/Amagi-TV-Commercial-Bada-Socho-TV-Socho.mp4",
+  :thumbnail_path => "https://amagi.herokuapp.com/Amagi-TV-Commercial-Bada-Socho-TV-Socho.jpg"
+)
