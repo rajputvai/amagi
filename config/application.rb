@@ -25,9 +25,8 @@ module Amagi
     config.exceptions_app = self.routes
     config.middleware.use Rack::Cors do
       allow do
-          origins '*'
-          resource '*', :headers => :any, :methods => [:get, :post, :options, :delete]
-        end
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :options, :delete]
       end
     end
   end
